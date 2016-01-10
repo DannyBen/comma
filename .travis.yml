@@ -27,5 +27,14 @@ gemfile:
 
 matrix:
   fast_finish: true
+  exclude:
+    - rvm: 2.0.0-p648
+      gemfile: gemfiles/rails_5.0.0.beta1.gemfile
+    - rvm: 2.0.0-p648
+      gemfile: gemfiles/activerecord_5.0.0.beta1.gemfile
+    - rvm: 2.1.8
+      gemfile: gemfiles/rails_5.0.0.beta1.gemfile
+    - rvm: 2.1.8
+      gemfile: gemfiles/activerecord_5.0.0.beta1.gemfile
 
 script: 'bundle exec rake spec'
