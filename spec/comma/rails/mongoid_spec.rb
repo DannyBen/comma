@@ -11,7 +11,7 @@ if defined? Mongoid
       field :name, :type => String
       field :age, :type => Integer
 
-      scope :teenagers, between(:age => 13..19)
+      scope :teenagers, -> { between(:age => 13..19) }
 
       comma do
         name
