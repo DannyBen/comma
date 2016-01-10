@@ -20,21 +20,10 @@ gemfile:
   - gemfiles/activerecord_4.1.14.gemfile
   - gemfiles/rails_4.2.5.gemfile
   - gemfiles/activerecord_4.2.5.gemfile
-  - gemfiles/rails_5.0.0.beta1.gemfile
-  - gemfiles/activerecord_5.0.0.beta1.gemfile
   - gemfiles/mongoid_4.0.2.gemfile
   - gemfiles/mongoid_5.0.2.gemfile
 
 matrix:
   fast_finish: true
-  exclude:
-    - rvm: 2.0.0-p648
-      gemfile: gemfiles/rails_5.0.0.beta1.gemfile
-    - rvm: 2.0.0-p648
-      gemfile: gemfiles/activerecord_5.0.0.beta1.gemfile
-    - rvm: 2.1.8
-      gemfile: gemfiles/rails_5.0.0.beta1.gemfile
-    - rvm: 2.1.8
-      gemfile: gemfiles/activerecord_5.0.0.beta1.gemfile
 
 script: 'bundle exec rake spec'

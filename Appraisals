@@ -1,4 +1,4 @@
-%w(4.0.13 4.1.14 4.2.5 5.0.0.beta1).each do |version|
+%w(4.0.13 4.1.14 4.2.5).each do |version|
   appraise "rails-#{version}" do
     gem 'rails', version
     gem 'rspec-rails'

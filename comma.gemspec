@@ -23,5 +23,4 @@ Gem::Specification.new do |s|
   s.add_development_dependency 'rspec', '~> 3.4.0'
   s.add_development_dependency 'rspec-activemodel-mocks', '~> 1.0.0'
   s.add_development_dependency 'rspec-its', '~> 1.2.0'
-  s.add_development_dependency 'sqlite3', '~> 1.3.0'
 end
